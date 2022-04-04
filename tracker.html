@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <style>
+        h2{
+            text-align: center;
+            color: rgb(46, 46, 114);
+            margin-top: 100px;
+        }
+        #container{
+            width: 200px;
+            height: 300px;
+            margin: auto;
+        }
+        #container>div{
+            width: 180px;
+        }
+        #submit>button{
+            width: 180px;
+            height: 30px;
+            color: white;
+            background-color: rgb(46, 46, 114);
+            border-radius: 20px;
+            margin-top: 10px;
+        }
+        u{
+            color: rgb(46, 46, 114);
+        }
+    </style>
+</head>
+<body>
+    <u><h2>EXPENSE TRACKER</h2></u>
+    <div id="container">
+        <form action="">
+            <div id="month">
+                <h3>Select Month</h3>
+                <select id="selectMonth">
+                    <option value="">--Select Month--</option>
+                    <option value="January">January</option>
+                    <option value="February">February</option>
+                    <option value="March">March</option>
+                    <option value="April">April</option>
+                    <option value="May">May</option>
+                    <option value="June">June</option>
+                    <option value="July">July</option>
+                    <option value="August">August</option>
+                    <option value="September">September</option>
+                    <option value="October">October</option>
+                    <option value="November"> November</option>
+                    <option value="December">December</option>
+                </select>
+            </div>
+            <div id="income">
+                <h3>Income</h3>
+                <input type="number" placeholder="Enter Income in Rs">
+            </div>
+            <div id="expenses">
+                <h3>Expenses</h3>
+                <input type="number" placeholder="Enter Expenses in Rs">
+            </div>
+            <div id="submit">
+                <button>Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
