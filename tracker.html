@@ -15,6 +15,7 @@
             width: 200px;
             height: 300px;
             margin: auto;
+            margin-top: 50px;
         }
         #container>div{
             width: 180px;
@@ -63,9 +64,21 @@
                 <input type="number" placeholder="Enter Expenses in Rs">
             </div>
             <div id="submit">
-                <button>Submit</button>
+                <button onclick="printExpenses()">Submit</button>
             </div>
         </form>
     </div>
 </body>
+<script>
+    function printExpenses(){
+        var mnt=document.getElementById("selectMonth").innerText;
+        console.log(mnt);
+
+        var incm=document.getElementById("income").innerText;
+        console.log(incm);
+
+        var exp=document.getElementById("submit").innerText;
+        console.log(exp);
+    }
+</script>
 </html>
